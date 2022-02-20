@@ -163,7 +163,7 @@ def main():
                      [7, 3, 0]]       #On commence par créer notre matrice de départ
     if not estRealisable(matriceDepart):
         print("Ce puzzle n\'est pas réalisable.")
-        return 0
+        return 1
     objet = determinerCoupsPossible(matriceDepart)
     dictCoups = {}
     dictCoups[transformeEnTuple(matriceDepart)] = creerLesMatricesDeNouveauxCoups(matriceDepart, objet)     #On met les premiers coups avec la matrice de départ
