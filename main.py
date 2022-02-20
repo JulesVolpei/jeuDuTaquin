@@ -1,5 +1,26 @@
 import time
 
+def donneInversion(matrice):
+    """
+    :param matrice: Matrice de départ
+    :return: Le nombre d'inversions
+    """
+    inv = 0
+    for i in range(len(matrice) - 1):
+        for j in range(i+1 , len(matrice)):
+            if ((matrice[i] > matrice[j]) and matrice[i] and matrice[j]):
+                inv += 1
+    return inv
+
+def estRealisable(matrice):
+    """
+    :param matrice: Matrice de départ
+    :return: Si le puzzle est faisable ou non
+    """
+    nbrInversion = donneInversion(matrice)
+    if (nbrInversion %2 ==0):
+        return True
+    return False
 
 def verifieSiTrouve(dict, matrice):
     """
@@ -132,10 +153,13 @@ def remonterDict(dict, cle, matriceEtape, cmpt):
     return matriceEtape
 
 def main():
-    matriceDepart = [[0, 1, 2],
-                     [3, 4, 5],
-                     [6, 7, 8]]        #On commence par créer notre matrice de départ
+    matriceDepart = [[1, 5, 7],
+                     [8, 0, 6],
+                     [3, 2, 4]]        #On commence par créer notre matrice de départ
     #matriceDepart = melanger(matriceDepart)     #On mélange cette fameuse matrice
+    if not estRealisable(matriceDepart):
+        print("Ce puzzle n\'est pas réalisable.")
+        return 0
     objet = determinerCoupsPossible(matriceDepart)
     dictCoups = {}
     dictCoups[transformeEnTuple(matriceDepart)] = creerLesMatricesDeNouveauxCoups(matriceDepart, objet)     #On met les premiers coups avec la matrice de départ
@@ -172,6 +196,7 @@ def main():
         afficherMat(etape[len(etape) - (1 + i)])    #Parcours à l'envers
         time.sleep(1)       #On génère une attente de 1 seconde entre chaque affichage pour avoir une petite représentation visuelle
         print(" ")
+    return 0
 
 
 
