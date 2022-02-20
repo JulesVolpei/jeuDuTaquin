@@ -153,10 +153,9 @@ def remonterDict(dict, cle, matriceEtape, cmpt):
     return matriceEtape
 
 def main():
-    matriceDepart = [[1, 5, 7],
-                     [8, 0, 6],
-                     [3, 2, 4]]        #On commence par créer notre matrice de départ
-    #matriceDepart = melanger(matriceDepart)     #On mélange cette fameuse matrice
+    matriceDepart = [[5, 2, 1],
+                     [6, 8, 4],
+                     [7, 3, 0]]       #On commence par créer notre matrice de départ
     if not estRealisable(matriceDepart):
         print("Ce puzzle n\'est pas réalisable.")
         return 0
@@ -192,6 +191,9 @@ def main():
     etape = []      #On crée une matrice avec les différentes étapes nécessaires pour résoudre le puzzle
     etape.append([[1, 2, 3], [4, 5, 6], [7, 8, 0]])     #On lui fait d'abord apprendre l'arrivée car on va parcourir etape à l'envers
     etape = remonterDict(dictCoups, cleFin, etape, nbrCoups)
+    afficherMat(matriceDepart)
+    print(" ")
+    time.sleep(1)
     for i in range(len(etape)):
         afficherMat(etape[len(etape) - (1 + i)])    #Parcours à l'envers
         time.sleep(1)       #On génère une attente de 1 seconde entre chaque affichage pour avoir une petite représentation visuelle
