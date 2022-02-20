@@ -14,8 +14,6 @@ Le jeu du taquin se présente sous la forme d'un puzzle avec un certain nombre d
 Le but du jeu est simple : faire en sorte de remettre chaque chiffre à sa place (à la manière de l'image ci-dessus).
 Pour se faire, nous allons d'abord réfléchir à un problème : *un puzzle est-il toujours réalisable ?*
 
-
-
 * ### Principe d'inversion :
 
 Prenons comme exemple le jeu du taquin ci-dessous :
