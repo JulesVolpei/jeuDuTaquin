@@ -56,7 +56,8 @@ Un puzzle est réalisable uniquement si son nombre d'inversions est un **chiffre
 
 La somme des inversions est donc égal à 15, un chiffre impair. Or, si l'on se revient au point **(2)**, ce puzzle est donc impossible à résoudre.
 
-
+## Partie n°2
+*Savoir si un coup est déjà présent.*
 
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
