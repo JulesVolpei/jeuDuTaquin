@@ -82,7 +82,7 @@ Pour déterminer quel coup faire, on va parcourir chaque valeur dans le dictionn
 Pour déterminer quel coup sont réalisables, on va d'abord parcourir `nouvelleMatrice` pour en saisir chaque matrice de coups non réalisés.
 On en ensuite parcourir cette matrice pour en ressortir la coordonnée du 0 (*représentant la case vide*) dans la matrice ainsi que les différents coups réalisables.
 
-#### Savoir quel coup faire
+### Savoir quel coup sont possibles
 
 Pour déterminer quel coup sont réalisables, nous allons regarder la position du 0 dans notre puzzle. Prenons ce puzzle comme exemple :
 
@@ -98,6 +98,12 @@ On peut voir que le 0 est à l'indice `(2, 2)`, ses coordonnées sont donc dans 
 On va ensuite procéder avec du cas par cas. Si 0 est à l'indice `(2, 2)`, les différents coups possibles sont : `[[1, 2], [2, 1]]`. Ces coups sont stockés dans une matrice.
 
 Nous allons ensuite renvoyer un tuple nommé `objet` avec à l'indice 0 de ce dernier, les coordonnées de la case vide et à l'indice 1 ses déplacements possibles.
+
+Une fois le tuple renvoyé, une fonction va se charger de créer une liste de matrice correspondant aux puzzles une fois les différents coups appliqués.
+
+Après ces opérations, nous allons reprendre la matrice à l'origine de ces nouveaux coups pour la transformer en tuple de tuples et ainsi ajouter un nouveau couple clé / valeur à notre dictionnaire de coups.
+
+À la fin de cette étape, nous allons rappeler la liste `matriceDejaFait` pour venir y ajouter la matrice à l'origine des coups pour en pas créer de doublons.
 
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
