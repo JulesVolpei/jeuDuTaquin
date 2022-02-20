@@ -79,6 +79,23 @@ Pour déterminer quel coup faire, on va parcourir chaque valeur dans le dictionn
 ## Partie n°3
 *Déterminer les coups possibles.*
 
+Pour déterminer quel coup sont réalisables, on va d'abord parcourir `nouvelleMatrice` pour en saisir chaque matrice de coups non réalisés.
+On en ensuite parcourir cette matrice pour en ressortir la coordonnée du 0 dans la matrice ainsi que les différents coups réalisables.
+
+#### Savoir quel coup faire
+
+Pour déterminer quel coup sont réalisables, nous allons regarder la position du 0 dans notre puzzle. Prenons ce puzzle comme exemple :
+
+```
+| 5 | 2 | 1 |
+
+| 6 | 8 | 4 |
+
+| 7 | 3 | 0 |
+```
+
+On peut voir que le 0 est à l'indice `(2, 2)`, ses coordonnées sont donc dans un premier temps stockées dans une variable. 
+
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
  - Gonzales Andy( https://github.com/GonzalesAndy ) 
