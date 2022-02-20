@@ -27,6 +27,7 @@ Prenons comme exemple le jeu du taquin ci-dessous :
 ```
 Pour déterminer si ce puzzle est faisable ou non, nous allons prendre chaque nombre **mal placé** et compter le nombre de chiffre mal placés inférieur à ce dernier. 
 Une fois le nombre d'inversion d'un nombre fait, on ne le compte plus pour les prochains calculs. **(1)**
+Un puzzle est réalisable uniquement si son nombre d'inversions est un **chiffre pair**. **(2)**
 
 *1* --> Le chiffre 1 est bien placé, on ne s'en occupe donc pas.
 
@@ -43,6 +44,8 @@ Une fois le nombre d'inversion d'un nombre fait, on ne le compte plus pour les p
 *2* --> `None` (aucun chiffre plus petit que 2 est mal placé).
 
 *4* --> `None` ( aucun chiffre, revoir **(1)** ).
+
+La somme des inversions est donc égal à 15, un chiffre impair. Or, si l'on se revient au point **(2)**, ce puzzle est donc impossible à résoudre.
 
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
