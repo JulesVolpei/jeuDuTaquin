@@ -12,7 +12,12 @@ Nous avons donc choisi, dans le cadre de ce projet, de créer un algorithme perm
 Le jeu du taquin se présente sous la forme d'un puzzle avec un certain nombre de cases numérotées ainsi qu'une case vide. Nous nous sommes concentrés sur le jeu du taquin en 3 * 3, possédant ainsi 9 cases dont une vide.
 
 Le but du jeu est simple : faire en sorte de remettre chaque chiffre à sa place (à la manière de l'image ci-dessus).
-Notre algorithme est divisé  en trois parties majeurs : 
+
+Notre algorithme est divisé en quatres parties majeurs : 
+- Savoir si un puzzle est réalisable
+- Savoir si un coup est déjà fait
+- Déterminer les autres coups possibles
+- Afficher les différentes étapes
 
 ## Partie n°1
 *Déterminer si un puzzle est réalisable ou non.*
