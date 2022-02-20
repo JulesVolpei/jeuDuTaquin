@@ -4,6 +4,8 @@ Ce dépôt est le résultat d'un projet universitaire portant sur la vulgarisati
 
 Nous avons donc choisi, dans le cadre de ce projet, de créer un algorithme permettant de résoudre le jeu du taquin, célèbre jeu de puzzle.
 
+Ce document markdown a comme but d'expliquer le fonctionnement de notre algorithme.
+
 
 ## Les règles :
 
