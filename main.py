@@ -138,18 +138,20 @@ def remonterDict(dict, cle, matriceEtape, cmpt):
     :param cmpt: Nombre de coups nécessaires pour compléter le puzzle
     :return: La matrice avec tous les coups nécessaires
     """
-    siBreak = False
-    for i in range(cmpt):
+    siBreak = False     # On utiliser ce booléen pour savoir si une matrice a été trouvé
+    for i in range(cmpt):   # On utiliser le compteur généré précédemment, déterminant le nombre d'étape
         for key in dict.keys():
-            for j in range(len(dict[key])):
-                if cle == transformeEnTuple(dict[key][j]):
+            for j in range(len(dict[key])):     # On parcourt chaque valeur de toutes les clés
+                if cle == transformeEnTuple(dict[key][j]):      # Si on trouve notre clé dans une valeur
+                    # On ajoute la clé dans matriceEtape
                     matriceEtape.append(dict[key][j])
-                    cle = key
+                    cle = key   # Clé prend la valeur de la nouvelle clé, la prochaine recherche se fera à partir de cette nouvelle clé
                     siBreak = True
+                    # siBreak prend comme valeur True car on brek
                     break
             if siBreak:
                 siBreak = False
-                break
+                break   # On casse la boucle dans les clé pour reprendre la recherche de 0 avec notre nouvelle clé
     return matriceEtape
 
 def main():
