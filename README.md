@@ -15,6 +15,7 @@ Le but du jeu est simple : faire en sorte de remettre chaque chiffre à sa place
 Notre algorithme est divisé  en trois parties majeurs : 
 
 ## Partie n°1
+*Déterminer si un puzzle est réalisable ou non.*
 
 
 * ### Principe d'inversion :
