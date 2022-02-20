@@ -37,7 +37,9 @@ Prenons comme exemple le jeu du taquin ci-dessous :
 | 3 | 2 | 4 |
 ```
 Pour déterminer si ce puzzle est faisable ou non, nous allons prendre chaque nombre **mal placé** et compter le nombre de chiffre mal placés inférieur à ce dernier. 
+
 Une fois le nombre d'inversion d'un nombre fait, on ne le compte plus pour les prochains calculs. **(1)**
+
 Un puzzle est réalisable uniquement si son nombre d'inversions est un **chiffre pair**. **(2)**
 
 *1* --> Le chiffre 1 est bien placé, on ne s'en occupe donc pas.
