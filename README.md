@@ -13,6 +13,8 @@ Le jeu du taquin se présente sous la forme d'un puzzle avec un certain nombre d
 
 Le but du jeu est simple : faire en sorte de remettre chaque chiffre à sa place (à la manière de l'image ci-dessus).
 
+![inversion] (https://media.discordapp.net/attachments/935195308856598559/944972947880300605/unknown.png)
+
 
 
 
