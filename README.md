@@ -16,7 +16,6 @@ Pour se faire, nous allons d'abord réfléchir à un problème : *un puzzle est-
 
 </br>
 </br>
-</br>
 
 * ### Principe d'inversion :
 
