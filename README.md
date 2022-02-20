@@ -9,6 +9,10 @@ Nous avons donc choisi, dans le cadre de ce projet, de créer un algorithme perm
 
 ![jeuDuTaquin](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbUT0ouQECz9RcjwlwbY05sGlhkq_MHNfsYA&usqp=CAU)
 
+Le jeu du taquin se présente sous la forme d'un puzzle avec un certain nombre de cases numérotées ainsi qu'une case vide. Nous nous sommes concentrés sur le jeu du taquin en 3 * 3, possédant ainsi 9 cases dont une vide.
+
+Le but du jeu est simple : faire en sorte de remettre chaque chiffre à sa place (à la manière de l'image ci-dessus).
+
 
 
 
