@@ -20,14 +20,14 @@ def transformeEnTuple(matrice):
     :param matrice: Matrice quelconque
     :return: La matrice transformée en tuple
     """
-    tpl = ()    #On commence par créer un premier tuple pour pouvoir y ajouter les autres
+    tplDeFin = ()    #On commence par créer un premier tuple pour pouvoir y ajouter les autres
     for i in range(len(matrice)):
-        ultTpl = ()
+        tplIntermediaire = ()
         for j in matrice[i]:    #On prend chaque liste quand la matrice
             tplTmp = (j,)   #Chaque élément dans la matrice est ajouté à un tuple
-            ultTpl += tplTmp    #Tuple qui est lui-même ajouté à un tuple
-        tpl += (ultTpl,)        #Avant d'être finalement ajouté à notre tuple de départ pour reformer une matrice
-    return tpl
+            tplIntermediaire += tplTmp    #Tuple qui est lui-même ajouté à un tuple
+        tplDeFin += (tplIntermediaire,)        #Avant d'être finalement ajouté à notre tuple de départ pour reformer une matrice
+    return tplDeFin
 def determinerCoupsPossible(matrice):
     """
     :param matrice: Matrice de départ ou matrice obtenue
@@ -101,10 +101,10 @@ def creerLesMatricesDeNouveauxCoups(matriceDebut, objet):
         matriceCoupsPossible.append(permute(matriceTmp, objet, i))     #Chaque liste va permettre de stocker une nouvelle matrice avec le 0 changé
         #On utilise permute() avec la copie de matriceDebut pour pouvoir recréer une copie de matriceDebut après l'opération
         matriceTmp = []    # On recrée une copie pour pouvoir reprendre matriceDebut
-        for i in range(len(matriceDebut)):
+        for j in range(len(matriceDebut)):
             matriceTmp.append([])
-            for j in range(len(matriceDebut[i])):
-                matriceTmp[i].append(matriceDebut[i][j])
+            for k in range(len(matriceDebut[j])):
+                matriceTmp[j].append(matriceDebut[j][k])
     return matriceCoupsPossible
 
 
@@ -139,13 +139,13 @@ def main():
     objet = determinerCoupsPossible(matriceDepart)
     dictCoups = {}
     dictCoups[transformeEnTuple(matriceDepart)] = creerLesMatricesDeNouveauxCoups(matriceDepart, objet)     #On met les premiers coups avec la matrice de départ
-    print('Working progress ...')
+    print('Ça travaille ...')
     nbrCoups = 0
     while(True):
         #On commence par vérifier si on a trouvé la matrice d'arrivée ou non
         if not verifieSiTrouve(dictCoups, [[1, 2, 3], [4, 5, 6], [7, 8, 0]]) == False:
             cleFin = verifieSiTrouve(dictCoups, [[1, 2, 3], [4, 5, 6], [7, 8, 0]])
-            print('DONE !')
+            print('FINI !')
             print("Réalisable en : ", nbrCoups, " coups.")
             break
 
