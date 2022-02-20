@@ -40,7 +40,8 @@ Pour déterminer si ce puzzle est faisable ou non, nous allons prendre chaque no
 
 Une fois le nombre d'inversion d'un nombre fait, on ne le compte plus pour les prochains calculs. **(1)**
 
-Un puzzle est réalisable uniquement si son nombre d'inversions est un **chiffre pair**. **(2)**
+Un puzzle est réalisable uniquement si la somme de ses inversions est un **paire**. **(2)**
+
 
 *1* --> Le chiffre 1 est bien placé, on ne s'en occupe donc pas.
 
