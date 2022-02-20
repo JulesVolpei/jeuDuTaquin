@@ -12,8 +12,7 @@ Nous avons donc choisi, dans le cadre de ce projet, de créer un algorithme perm
 Le jeu du taquin se présente sous la forme d'un puzzle avec un certain nombre de cases numérotées ainsi qu'une case vide. Nous nous sommes concentrés sur le jeu du taquin en 3 * 3, possédant ainsi 9 cases dont une vide.
 
 Le but du jeu est simple : faire en sorte de remettre chaque chiffre à sa place (à la manière de l'image ci-dessus).
-
-![inversion] (https://media.discordapp.net/attachments/935195308856598559/944972947880300605/unknown.png)
+Pour se faire, nous allons d'abord réfléchir à un problème : *un puzzle est-il toujours réalisable ?*
 
 
 
