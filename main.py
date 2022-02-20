@@ -99,6 +99,7 @@ def permute(matrice, objet, indiceCoup):
     :param indiceCoup: Coup actuel
     :return: La nouvelle matrice une fois le 0 bougé
     """
+    # Cette ligne est imbuvale, mais ce qu'il faut en retenir c'est que l'on permute le 0 avec un des coefficients de la matrice (là où on peut bouger le 0)
     matrice[objet[0][0]][objet[0][1]], matrice[objet[1][indiceCoup][0]][objet[1][indiceCoup][1]] = matrice[objet[1][indiceCoup][0]][objet[1][indiceCoup][1]], matrice[objet[0][0]][objet[0][1]]
     return matrice
 
