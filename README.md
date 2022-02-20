@@ -12,7 +12,9 @@ Nous avons donc choisi, dans le cadre de ce projet, de créer un algorithme perm
 Le jeu du taquin se présente sous la forme d'un puzzle avec un certain nombre de cases numérotées ainsi qu'une case vide. Nous nous sommes concentrés sur le jeu du taquin en 3 * 3, possédant ainsi 9 cases dont une vide.
 
 Le but du jeu est simple : faire en sorte de remettre chaque chiffre à sa place (à la manière de l'image ci-dessus).
-Pour se faire, nous allons d'abord réfléchir à un problème : *un puzzle est-il toujours réalisable ?*
+Notre algorithme est divisé  en trois parties majeurs : 
+
+## Partie n°1
 
 
 * ### Principe d'inversion :
@@ -47,6 +49,8 @@ Un puzzle est réalisable uniquement si son nombre d'inversions est un **chiffre
 *4* --> `None` ( aucun chiffre, revoir **(1)** ).
 
 La somme des inversions est donc égal à 15, un chiffre impair. Or, si l'on se revient au point **(2)**, ce puzzle est donc impossible à résoudre.
+
+
 
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
