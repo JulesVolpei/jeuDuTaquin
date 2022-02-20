@@ -105,6 +105,19 @@ Après ces opérations, nous allons reprendre la matrice à l'origine de ces nou
 
 À la fin de cette étape, nous allons rappeler la liste `matriceDejaFait` pour venir y ajouter la matrice à l'origine des coups pour en pas créer de doublons.
 
+On réitère donc l'opération, calculant ainsi toutes les possiblitées possibles pour chaque nouveau puzzle avant de trouver dans une des valeurs d'une de nos clés la matrice : 
+
+```
+| 1 | 2 | 3 |
+
+| 4 | 5 | 6 |
+
+| 7 | 8 | 0 |
+```
+
+## Partie n° 4
+(*Déterminer les coups à réaliser pour abouttir au résultat*).
+
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
  - Gonzales Andy( https://github.com/GonzalesAndy ) 
