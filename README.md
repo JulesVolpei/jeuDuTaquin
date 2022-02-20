@@ -27,6 +27,10 @@ Prenons comme exemple le jeu du taquin ci-dessous :
 ```
 Pour déterminer si ce puzzle est faisable ou non, nous allons prendre chaque nombre **mal placé** et compter le nombre de chiffre mal placés inférieur à ce dernier.
 
+*1* --> Le chiffre 1 est bien placé, on ne s'en occupe donc pas.
+
+*5* --> **3**, **4**, **2** sont mal placé. Son nombre d'inversion est : 3 (car il y a 3 chiffres mal placés)
+
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
  - Gonzales Andy( https://github.com/GonzalesAndy ) 
