@@ -25,6 +25,7 @@ Prenons comme exemple le jeu du taquin ci-dessous :
 
 | 3 | 2 | 4 |
 ```
+Pour déterminer si ce puzzle est faisable ou non, nous allons prendre chaque nombre **mal placé** et compter le nombre de chiffre mal placés inférieur à ce dernier.
 
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
