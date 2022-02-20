@@ -71,6 +71,8 @@ Nous avons donc transformé cette matrice en un tuple de tuple car les tuples pe
 
 La valeur de la clé est une liste composée des matrices représentant les différents coups possibles.
 
+Pour savoir quel coup faire, on crée deux matrices : `nouvelleMatrice` - `matriceDejaFait`.
+
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
  - Gonzales Andy( https://github.com/GonzalesAndy ) 
