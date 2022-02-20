@@ -5,14 +5,14 @@ Ce dépôt est le résultat d'un projet universitaire portant sur la vulgarisati
 Nous avons donc choisi, dans le cadre de ce projet, de créer un algorithme permettant de résoudre le jeu du taquin, célèbre jeu de puzzle.
 
 
-### Les règles :
+## Les règles :
 
 
 
 
 
 
-## Auteurs :
+### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
  - Gonzales Andy( https://github.com/GonzalesAndy ) 
  - Leydier Elisée ( https://github.com/EliseeLeydier )
