@@ -18,13 +18,13 @@ Pour se faire, nous allons d'abord réfléchir à un problème : *un puzzle est-
 
 Prenons comme exemple le jeu du taquin ci-dessous :
 
-`
+
 | 1 | 5 | 7 |
 
 | 8 |   | 6 |
 
 | 3 | 2 | 4 |
-`
+
 
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
