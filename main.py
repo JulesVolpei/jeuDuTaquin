@@ -7,7 +7,7 @@ def donneInversion(matrice):
     """
     inv = 0
     for i in range(len(matrice) - 1):
-        for j in range(i+1 , len(matrice)):
+        for j in range(i+1 , len(matrice)):     # On va venir compter le nombre d'inversions possible dans notre puzzle
             if ((matrice[i] > matrice[j]) and matrice[i] and matrice[j]):
                 inv += 1
     return inv
@@ -18,8 +18,10 @@ def estRealisable(matrice):
     :return: Si le puzzle est faisable ou non
     """
     nbrInversion = donneInversion(matrice)
-    if (nbrInversion %2 ==0):
+    if (nbrInversion %2 ==0):       # Si la somme des inversions est pair
+        # Le puzzle est réalisable
         return True
+    # Le puzzle est impossible
     return False
 
 def verifieSiTrouve(dict, matrice):
