@@ -82,7 +82,7 @@ Pour déterminer quel coup faire, on va parcourir chaque valeur dans le dictionn
 Pour déterminer quel coup sont réalisables, on va d'abord parcourir `nouvelleMatrice` pour en saisir chaque matrice de coups non réalisés.
 On en ensuite parcourir cette matrice pour en ressortir la coordonnée du 0 (*représentant la case vide*) dans la matrice ainsi que les différents coups réalisables.
 
-### Savoir quel coup sont possibles
+### Savoir quels coups sont possibles
 
 Pour déterminer quel coup sont réalisables, nous allons regarder la position du 0 dans notre puzzle. Prenons ce puzzle comme exemple :
 
@@ -115,8 +115,19 @@ On réitère donc l'opération, calculant ainsi toutes les possiblitées possibl
 | 7 | 8 | 0 |
 ```
 
+On compte également chaque fois que l'on crée de nouvelles clés dans notre dictionnaire, nous permettant d'en déduire le nombre d'étape nécessaire.
+
 ## Partie n° 4
 (*Déterminer les coups à réaliser pour abouttir au résultat*).
+
+Grâce à notre variable comptant le nombre d'opérations nécessaires, nous allons pouvoir remonter notre dictionnaire pour en déduire les coups à réaliser pour résoudre notre puzzle d'origine.
+
+Pour se faire, nous créeons une nouvelle liste de matrices : `etape` qui va dans un premier temps ajouter comme premier élément notre matrice **d'arrivée**.
+Nous allons ensuite prendre la clé comportant dans ses valeurs notre matrice d'arrivée et parcourir toutes les valeurs pour retrouver une clé possédant cette matrice comme valeur. 
+
+On récupère cette nouvelle clé que l'on ajoute à notre liste de matrices et on réitère l'opération jusqu'à atteindre la valeur de notre compteur (*partie n°3*) pour venir y récupérer le tout premier coup joué menant à notre solution.
+
+On commence donc par afficher le puzzle d'origine avant de parcourir **à l'envers** notre liste `etape`.
 
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
