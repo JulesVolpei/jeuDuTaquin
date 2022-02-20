@@ -7,7 +7,7 @@ Nous avons donc choisi, dans le cadre de ce projet, de créer un algorithme perm
 
 ## Les règles :
 
-
+![jeuDuTaquin](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbUT0ouQECz9RcjwlwbY05sGlhkq_MHNfsYA&usqp=CAU)
 
 
 
