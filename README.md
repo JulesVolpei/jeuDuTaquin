@@ -76,6 +76,9 @@ Pour savoir quel coup faire, on crée deux matrices : `nouvelleMatrice` - `matri
 À chaque coup réalisé (*partie n°3*) on va stocker ce coup dans `matriceDejaFait`. 
 Pour déterminer quel coup faire, on va parcourir chaque valeur dans le dictionnaire pour savoir si elle est dans `matriceDejaFait`, sinon on l'ajoute dans `nouvelleMatrice`.
 
+## Partie n°3
+*Déterminer les coups possibles.*
+
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
  - Gonzales Andy( https://github.com/GonzalesAndy ) 
