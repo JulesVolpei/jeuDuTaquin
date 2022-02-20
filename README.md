@@ -80,7 +80,7 @@ Pour déterminer quel coup faire, on va parcourir chaque valeur dans le dictionn
 *Déterminer les coups possibles.*
 
 Pour déterminer quel coup sont réalisables, on va d'abord parcourir `nouvelleMatrice` pour en saisir chaque matrice de coups non réalisés.
-On en ensuite parcourir cette matrice pour en ressortir la coordonnée du 0 dans la matrice ainsi que les différents coups réalisables.
+On en ensuite parcourir cette matrice pour en ressortir la coordonnée du 0 (*représentant la case vide*) dans la matrice ainsi que les différents coups réalisables.
 
 #### Savoir quel coup faire
 
@@ -95,6 +95,9 @@ Pour déterminer quel coup sont réalisables, nous allons regarder la position d
 ```
 
 On peut voir que le 0 est à l'indice `(2, 2)`, ses coordonnées sont donc dans un premier temps stockées dans une variable. 
+On va ensuite procéder avec du cas par cas. Si 0 est à l'indice `(2, 2)`, les différents coups possibles sont : `[[1, 2], [2, 1]]`. Ces coups sont stockés dans une matrice.
+
+Nous allons ensuite renvoyer un tuple nommé `objet` avec à l'indice 0 de ce dernier, les coordonnées de la case vide et à l'indice 1 ses déplacements possibles.
 
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
