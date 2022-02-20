@@ -108,7 +108,7 @@ Une fois le tuple renvoyé, une fonction va se charger de créer une liste de ma
 
 Après ces opérations, nous allons reprendre la matrice à l'origine de ces nouveaux coups pour la transformer en tuple de tuples et ainsi ajouter un nouveau couple clé / valeur à notre dictionnaire de coups.
 
-À la fin de cette étape, nous allons rappeler la liste `matriceDejaFait` pour venir y ajouter la matrice à l'origine des coups pour en pas créer de doublons.
+À la fin de cette étape, nous allons rappeler la liste `matriceDejaFait` pour venir y ajouter la matrice à l'origine des coups pour ne pas créer de doublons.
 
 On réitère donc l'opération, calculant ainsi toutes les possiblitées possibles pour chaque nouveau puzzle avant de trouver dans une des valeurs d'une de nos clés la matrice : 
 
