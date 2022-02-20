@@ -34,6 +34,16 @@ Une fois le nombre d'inversion d'un nombre fait, on ne le compte plus pour les p
 
 *7* --> **6**, **4**, **3**, **2** sont mal placés. Son nombre d'inversion est : 4 (on ne compte pas **5**, revoir **(1)**).
 
+*8* --> **6**, **4**, **3**, **2** sont mal placés. Son nombre d'inversion est : 4.
+
+*6* --> **3**, **4**, **2** sont mal placés. Son nombre d'inversion est : 3.
+
+*3* --> **2** est mal placé. Son nombre d'inversion est : 1.
+
+*2* --> `None` (aucun chiffre plus petit que 2 est mal placé).
+
+*4* --> `None` ( aucun chiffre, revoir **(1)** ).
+
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
  - Gonzales Andy( https://github.com/GonzalesAndy ) 
