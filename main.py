@@ -1,8 +1,5 @@
-import random
+import time
 
-def affichageDict(dict):
-    for key, value in dict.items():
-        print(key, " : ", value)
 
 def verifieSiTrouve(dict, matrice):
     """
@@ -10,10 +7,12 @@ def verifieSiTrouve(dict, matrice):
     :param matrice: Matrice d'arrivée
     :return: False si la matricé d'arrivée n'est trouvée nul part
     """
-    for key, value in dict.items():
+    for key, value in dict.items():     # On va parcourir TOUTES les valeurs du dictionnaire pour vérifier si la matrice d'arrivée est présente
         for i in value:
             if matrice == i:
+                # Si la matrice de la valeur est la matrice d'arrivée, on retourne sa clé
                 return key
+    # La matrice d'arrivée n'est pas présente
     return False
 
 def transformeEnTuple(matrice):
@@ -133,7 +132,9 @@ def remonterDict(dict, cle, matriceEtape, cmpt):
     return matriceEtape
 
 def main():
-    matriceDepart = [[0, 5, 4], [7, 6, 3], [1, 2, 8]]        #On commence par créer notre matrice de départ
+    matriceDepart = [[0, 1, 2],
+                     [3, 4, 5],
+                     [6, 7, 8]]        #On commence par créer notre matrice de départ
     #matriceDepart = melanger(matriceDepart)     #On mélange cette fameuse matrice
     objet = determinerCoupsPossible(matriceDepart)
     dictCoups = {}
@@ -161,7 +162,6 @@ def main():
             dictCoups[transformeEnTuple(nouvelleMatrice[i])] = creerLesMatricesDeNouveauxCoups(nouvelleMatrice[i], objet)
             matriceDejaFaite.append(nouvelleMatrice[i])
 
-        #affichageDict(dictCoups)
         nbrCoups += 1
 
     # On va remonter le dictionnaire pour pouvoir trouver les différentes étapes nécessaires pour le résoudre
@@ -170,6 +170,7 @@ def main():
     etape = remonterDict(dictCoups, cleFin, etape, nbrCoups)
     for i in range(len(etape)):
         afficherMat(etape[len(etape) - (1 + i)])    #Parcours à l'envers
+        time.sleep(1)       #On génère une attente de 1 seconde entre chaque affichage pour avoir une petite représentation visuelle
         print(" ")
 
 
