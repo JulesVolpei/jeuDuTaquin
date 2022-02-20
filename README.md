@@ -69,6 +69,8 @@ Les coups sont stockés de cette manière dans un dictionnaire :
 Notre puzzle est traduit sous forme de matrice. Malheureusement, une matrice ne peut pas être considéré comme une clé dans un dictionnaire.
 Nous avons donc transformé cette matrice en un tuple de tuple car les tuples peuvent être utilisés comme clé.
 
+La valeur de la clé est une liste composée des matrices représentant les différents coups possibles.
+
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
  - Gonzales Andy( https://github.com/GonzalesAndy ) 
