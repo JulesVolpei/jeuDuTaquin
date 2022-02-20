@@ -59,6 +59,13 @@ La somme des inversions est donc égal à 15, un chiffre impair. Or, si l'on se 
 ## Partie n°2
 *Savoir si un coup est déjà présent.*
 
+Dans notre algorithme, les coups à partir de notre puzzle de départ sont effectués en dehors de notre boucle principale.
+Les coups sont stockés de cette manière :
+
+```py
+{ ( tuple(matriceRepresentantLePuzzle) ) : [ [coup n°1] ... ] }
+```
+
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
  - Gonzales Andy( https://github.com/GonzalesAndy ) 
