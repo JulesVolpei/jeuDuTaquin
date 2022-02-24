@@ -15,7 +15,7 @@ Le jeu du taquin se présente sous la forme d'un puzzle avec un certain nombre d
 
 Le but du jeu est simple : faire en sorte de remettre chaque chiffre à sa place (à la manière de l'image ci-dessus).
 
-Notre algorithme est divisé en quatres parties majeurs : 
+Notre algorithme est divisé en quatres parties majeures : 
 - Savoir si un puzzle est réalisable
 - Savoir si un coup est déjà fait
 - Déterminer les autres coups possibles
@@ -36,7 +36,7 @@ Prenons comme exemple le jeu du taquin ci-dessous :
 
 | 3 | 2 | 4 |
 ```
-Pour déterminer si ce puzzle est faisable ou non, nous allons prendre chaque nombre **mal placé** et compter le nombre de chiffre mal placés inférieur à ce dernier. 
+Pour déterminer si ce puzzle est faisable ou non, nous allons prendre chaque chiffre **mal placé** et compter le nombre de chiffre mal placés inférieur à ce dernier. 
 
 Une fois le nombre d'inversion d'un nombre fait, on ne le compte plus pour les prochains calculs. **(1)**
 
@@ -59,7 +59,7 @@ Un puzzle est réalisable uniquement si la somme de ses inversions est un **pair
 
 *4* --> `None` ( aucun chiffre, revoir **(1)** ).
 
-La somme des inversions est donc égal à 15, un chiffre impair. Or, si l'on se revient au point **(2)**, ce puzzle est donc impossible à résoudre.
+La somme des inversions est donc égale à 15, un chiffre impair. Or, si l'on se revient au point **(2)**, ce puzzle est donc impossible à résoudre.
 
 ## Partie n°2
 *Savoir si un coup est déjà présent.*
@@ -71,7 +71,7 @@ Les coups sont stockés de cette manière dans un dictionnaire :
 { ( tuple(matriceRepresentantLePuzzle) ) : [ [coup n°1] ... ] }
 ```
 
-Notre puzzle est traduit sous forme de matrice. Malheureusement, une matrice ne peut pas être considéré comme une clé dans un dictionnaire.
+Notre puzzle est traduit sous forme de matrice. Malheureusement, une matrice ne peut pas être considérée comme une clé dans un dictionnaire.
 Nous avons donc transformé cette matrice en un tuple de tuple car les tuples peuvent être utilisés comme clé.
 
 La valeur de la clé est une liste composée des matrices représentant les différents coups possibles.
