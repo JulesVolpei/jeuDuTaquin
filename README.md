@@ -137,6 +137,3 @@ On commence donc par afficher le puzzle d'origine avant de parcourir **à l'enve
 
 ### Auteurs :
  - Volpei Jules ( https://github.com/JulesVolpei )
- - Gonzales Andy( https://github.com/GonzalesAndy ) 
- - Leydier Elisée ( https://github.com/EliseeLeydier )
- - Canale Enzo ( https://github.com/eenzocl )
