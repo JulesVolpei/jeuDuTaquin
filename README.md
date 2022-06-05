@@ -135,5 +135,3 @@ On récupère cette nouvelle clé que l'on ajoute à notre liste de matrices et 
 
 On commence donc par afficher le puzzle d'origine avant de parcourir **à l'envers** notre liste `etape`.
 
-### Auteurs :
- - Volpei Jules ( https://github.com/JulesVolpei )
